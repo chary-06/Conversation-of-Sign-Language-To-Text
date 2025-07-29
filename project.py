@@ -24,7 +24,7 @@ class Application:
     def _init_(self):
         self.vs = cv2.VideoCapture(0)
         self.current_image = None
-        self.model = load_model('C:\\Users\\Pravalika Chitloju\\Desktop\\SignToText-main\\cnn8grps_rad1_model.h5')
+        self.model = load_model('YOUR FILE LINK')
         self.ct = {}
         self.ct['blank'] = 0
         self.blank_flag = 0
@@ -128,7 +128,7 @@ class Application:
 
             if hands:
                 hand = hands[0]
-                white = cv2.imread("C:\\Users\\Pravalika Chitloju\\Desktop\\SignToText-main\\white.jpg")
+                white = cv2.imread("YOUR FILE LINK")
                 if len(hand)>0:
                     bbox = hand[0]['bbox']
                     image = cv2image_copy[bbox[1] - offset:bbox[1] + bbox[3] + offset, bbox[0] - offset:bbox[0] + bbox[2] + offset]
