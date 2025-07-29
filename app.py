@@ -27,7 +27,7 @@ class Application:
     def __init__(self):
         self.vs = cv2.VideoCapture(0)
         self.current_image = None
-        self.model = load_model('C:\\Users\\Pravalika Chitloju\\Desktop\\SignToText-main\\cnn8grps_rad1_model.h5')
+        self.model = load_model('YOUR FILE LINK')
         # self.speak_engine=pyttsx3.init()
         # self.speak_engine.setProperty("rate",100)
         # voices=self.speak_engine.getProperty("voices")
@@ -212,7 +212,7 @@ class Application:
                 x, y, w, h = hand['bbox']
                 image = cv2image_copy[y - offset:y + h + offset, x - offset:x + w + offset]
 
-                white = cv2.imread("C:\\Users\\Pravalika Chitloju\\Desktop\\SignToText-main\\white.jpg")
+                white = cv2.imread("YOUR FILE LINK")
                 # img_final=img_final1=img_final2=0
 
                 handz,frame = hd2.findHands(image, draw=False, flipType=True)
