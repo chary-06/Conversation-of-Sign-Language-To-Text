@@ -40,10 +40,4 @@ To get started with the Flask Sign Language to Text Conversion web application, 
    ```
 
 4. **Open in Browser**: Open your web browser and go to `http://localhost:5000` to access the application.(Code for ECC@ deployment)
-
-## Configuration
-Currently configured to run on AWS EC2 but not deployed currently.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.
+![Img](https://github.com/user-attachments/assets/84692368-cb5e-47b7-8aa1-c646aae5a153)
